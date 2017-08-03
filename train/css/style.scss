@@ -1,0 +1,168 @@
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: .12rem;
+  display: flex;
+  flex-direction: column;
+
+  background: #eeeeee;
+}
+
+.header{
+  width: 100%;
+  height: .44rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+  box-sizing: border-box;
+  position: fixed;
+  top: .05rem;
+  left: 0;
+  z-index: 333;
+  span{
+    position: absolute;
+    width: .3rem;
+    height: .3rem;
+    background: #fff;
+    font-size: .17rem;
+    color: #333;
+    border-radius: 50%;
+    text-align: center;
+    line-height: .3rem;
+  }
+  .left{
+    top: .05rem;
+    left: .05rem;
+  }
+  .right{
+    top: .05rem;
+    right: .05rem;
+  }
+  input{
+    width: 100%;
+    margin-top: .06rem;
+    height: .3rem;
+    border-radius: 10px;
+    background: #fafafa;
+    border: none;
+    padding-left: .15rem;
+    padding-right: .15rem;
+    box-sizing: border-box;
+  }
+}
+
+
+.content{
+  flex: 1;
+  overflow: auto;
+  .banner{
+    a{
+      width: 100%;
+      display: block;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .con{
+    background: #fdfef8;
+    padding-top: .02rem;
+    padding-bottom: .05rem;
+    box-sizing: border-box;
+    ul{
+      display: flex;
+      padding: .05rem;
+      box-sizing: border-box;
+      padding-top: 0;
+      li{
+        flex: 1;
+        border-right: 1px solid #ccc;
+
+        color: #fff;
+        dl{
+          text-align: center;
+          dt{
+            font-size: .35rem;
+            padding-top: .05rem;
+          }
+          dd{
+            font-size: .16rem;
+            padding-top: .1rem;
+            position: relative;
+            img{
+              position: absolute;
+              width: 1rem;
+              left: 50%;
+              margin-left: -.5rem;
+              top: -.01rem;
+            }
+          }
+        }
+        p{
+          line-height: .5rem;
+          text-align: center;
+          font-size: .14rem;
+          border-bottom: 1px solid #ccc;
+          position: relative;
+          overflow: hidden;
+          .dazhe{
+            position: absolute;
+            width: .7rem;
+            height: .16rem;
+            top: .05rem;
+            left: -.2rem;
+            background: #f4f08f;
+            color: #d32b00;
+            line-height: .16rem;
+            transform: rotate(-45deg);
+            font-size: .12rem;
+          }
+        }
+      }
+    }
+    .con_red{
+      li{
+        background: #ff5555;
+      }
+    }
+    .con_green{
+      li{
+        background: #7eb53d;
+      }
+    }
+    .con_blue{
+      li{
+        background: #03a9f5;
+      }
+    }
+    .con_orange{
+      li{
+        background: #ff9801;
+      }
+    }
+  }
+
+}
+.footer{
+  height: .46rem;
+  background: #ffffff;
+  display: flex;
+  a{
+    flex: 1;
+    text-align: center;
+    color: #8c8c8c;
+
+    padding-top: .05rem;
+    i{
+      font-size: .25rem;
+    }
+    span{
+      display: block;
+    }
+  }
+  .bg{
+    color: #07bdd2;
+  }
+}
